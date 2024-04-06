@@ -19,7 +19,12 @@ def generate_id_card(name, constituency, booth_number, dob, gender,voter_id, pho
 
     # Load a font
     font_path = "arial.ttf" 
-    font = ImageFont.truetype(font_path, 20)
+    try:
+        font = ImageFont.truetype(font_path, 20)
+    except OSError:
+    # Fallback to a default font if the specified font is not available
+        font = ImageFont.load_default()
+
     draw.text((320,170), voter_id, fill="black", font=font)
 
     # Write details on the image
