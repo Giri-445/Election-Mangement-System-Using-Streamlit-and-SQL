@@ -6,6 +6,7 @@ from datetime import  date, datetime, timedelta
 from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
+from PIL import Image, ImageDraw, ImageFont
 
 
 conn=sq.connect('Election_database.db')
