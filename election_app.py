@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 conn=sq.connect('Election_database.db')
 c=conn.cursor()
-logos=["Car","Sun","Lotus","Leaf"]
+logos=["Car","Sun","Lotus","Leaf","Crown"]
 st.set_page_config(
     page_title="Election Commission of India",
     
